@@ -1,0 +1,72 @@
+{
+  "name": "ecomsecure-scanner",
+  "version": "1.0.0",
+  "description": "AI-Powered E-Commerce Vulnerability Scanner CLI",
+  "main": "dist/cli/index.js",
+  "bin": {
+    "ecomsecure": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli/index.ts",
+    "start": "node dist/cli/index.js",
+    "test": "jest",
+    "test:integration": "jest --config jest.integration.config.js",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "security",
+    "vulnerability-scanner",
+    "e-commerce",
+    "penetration-testing",
+    "checkout-security",
+    "cli"
+  ],
+  "author": "Agam Bhasin <bhasinagamm@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhasinagam/Ecom-Secure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bhasinagam/Ecom-Secure/issues"
+  },
+  "homepage": "https://github.com/bhasinagam/Ecom-Secure#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "@tensorflow/tfjs-node-gpu": "^4.22.0",
+    "@types/jsonwebtoken": "^9.0.10",
+    "axios": "^1.6.7",
+    "bottleneck": "^2.19.5",
+    "boxen": "^5.1.2",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0-rc.12",
+    "commander": "^12.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "lru-cache": "^10.2.0",
+    "openai": "^4.28.0",
+    "ora": "^5.4.1",
+    "playwright": "^1.41.2",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.27",
+    "@types/uuid": "^9.0.8",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "nock": "^13.5.4",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
